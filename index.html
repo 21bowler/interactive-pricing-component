@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              colorSlider: "hsl(174, 77%, 80%)",
+              sliderBg: "hsl(174, 86%, 45%)",
+              discountBg: "hsl(14, 92%, 95%)",
+              discountTxt: "hsl(15, 100%, 70%)",
+              paleBlueCta: "hsl(226, 100%, 87%)",
+
+              pricingBg: "hsl (0, 0%, 100%)",
+              mainBg: "hsl(230, 100%, 99%)",
+              lightgrayishblueSlider: "hsl(224, 65%, 95%)",
+              lightGrayishBlueToggle: "hsl(223, 50%, 87%)",
+              grayishblueText: "hsl(225, 20%, 60%)",
+              textCtaBg: "hsl(227, 35%, 25%)",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            backgroundImage: {
+              "hero-image": "url('/images/bg-pattern.svg')",
+              "hero-circles": "url('/images/pattern-circles.svg')",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-manrope bg-mainBg">
+    <header class="text-center py-28 bg-hero-image bg-cover leading-7">
+      <h1 class="text-2xl font-bold">Simple, traffic-based pricing</h1>
+      <p class="text-grayishblueText">Sign-up for our 30-day trial.</p>
+      <p class="text-grayishblueText"> No credit card required.</p>
+    </header>
+    <main class="border-2 mx-6 rounded-xl bg-pricingBg text-center">
+      <section>
+        <!-- numbers section with a slider -->
+        <div>
+          <h2 class="text-grayishblueText font-bold py-6">100k Pageviews</h2>
+          <div class="border-2 my-2">
+            <img src="./images/icon-slider.svg" class="mx-auto bg-sliderBg h-10 w-10 py-2 px-1 rounded-full cursor-pointer" alt="slider" />
+          </div>
+          <p class="py-3"><span class="font-bold text-[2rem]">$16.00</span>/month</p>
+          <!-- Billing section with toggle -->
+          <div>
+            <div>
+              <p>Monthly Billing</p>
+              <input type="radio" />
+            </div>
+            <div>
+              <p>Yearly Billing</p>
+              <p>-25% <span>discount</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- second div with trial button -->
+        <div>
+          <div>
+            <div>
+              <img src="./images/icon-check.svg" alt="icon-check" />
+              <p>Unlimited websites</p>
+            </div>
+            <div>
+              <img src="./images/icon-check.svg" alt="icon-check" />
+              <p>100% data ownership</p>
+            </div>
+            <div>
+              <img src="./images/icon-check.svg" alt="icon-check" />
+              <p>Email reports</p>
+            </div>
+          </div>
+          <button>Start my trial</button>
+        </div>
+      </section>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
