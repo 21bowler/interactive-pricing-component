@@ -62,38 +62,38 @@
       }
     </style>
   </head>
-  <body class="font-manrope bg-mainBg">
+  <body class="font-manrope py-4 bg-mainBg">
     <header class="text-center py-28 bg-hero-image bg-cover leading-7">
       <h1 class="text-2xl font-bold">Simple, traffic-based pricing</h1>
       <p class="text-grayishblueText">Sign-up for our 30-day trial.</p>
       <p class="text-grayishblueText"> No credit card required.</p>
     </header>
     <main class="border-2 mx-6 rounded-xl bg-pricingBg text-center">
-      <section>
+      <section class="py-4">
         <!-- numbers section with a slider -->
         <div>
-          <h2 class="text-grayishblueText font-bold py-6">100k Pageviews</h2>
+          <h2 class="text-grayishblueText font-bold py-6 tracking-widest">100k Pageviews</h2>
           <div class="border-2 my-2">
             <img src="./images/icon-slider.svg" class="mx-auto bg-sliderBg h-10 w-10 py-2 px-1 rounded-full cursor-pointer" alt="slider" />
           </div>
-          <p class="py-3"><span class="font-bold text-[2rem]">$16.00</span>/month</p>
+          <p class="py-3"><span class="font-bold text-[2rem]">$16.00</span><span class="text-grayishblueText pl-2 border-2">/month</span></p>
           <!-- Billing section with toggle -->
-          <div>
-            <div>
-              <p>Monthly Billing</p>
-              <input type="radio" />
+          <div class="flex justify-center gap-2 p-4">
+            <div class="flex gap-6">
+              <p class="text-grayishblueText">Monthly Billing</p>
+              <input type="checkbox" />
             </div>
-            <div>
-              <p>Yearly Billing</p>
-              <p>-25% <span>discount</span></p>
+            <div class="flex">
+              <p class="text-grayishblueText">Yearly Billing</p>
+              <p class="text-sm bg-discountBg text-discountTxt rounded-lg p-1">-25% <span class="hidden md:block">discount</span></p>
             </div>
           </div>
         </div>
         <!-- second div with trial button -->
         <div>
           <div>
-            <div>
-              <img src="./images/icon-check.svg" alt="icon-check" />
+            <div class="mx-auto">
+              <img src="./images/icon-check.svg" class="mx-auto" alt="icon-check" />
               <p>Unlimited websites</p>
             </div>
             <div>
@@ -105,7 +105,7 @@
               <p>Email reports</p>
             </div>
           </div>
-          <button>Start my trial</button>
+          <button class="bg-textCtaBg text-grayishblueText rounded-3xl px-8 py-2">Start my trial</button>
         </div>
       </section>
     </main>
